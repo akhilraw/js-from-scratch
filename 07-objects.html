@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Objects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- start javascript -->
+    <script>
+        //
+        const hero = {
+            name: 'Bruce Wayne',
+            alias: 'Batman',
+            catchphrase: 'To the Batcave',
+
+            speak: function() {
+                return 'Attention ' + this.catchphrase;
+            },
+            attack: function(sound) {
+                return `(punches bad guy ${sound})`;
+            }
+        }
+
+        // access a property
+        const thingToLookFor = 'alias';
+
+        console.log(hero.name); //Bruce Wayne
+        console.log(hero['name']); //Bruce Wayne
+        console.log(hero[thingToLookFor]); //Batman
+
+        // accessing methods(functions)
+        console.log(hero.speak());
+        console.log(hero.attack('powwwwwwwww'));
+
+        'this is my string'.toUpperCase();
+    </script>
+</body>
+
+</html>
+
+<!-- everything in javascript is object -->
+<!-- 
+    objects and accessing the objects property
+    object property as methods and accessing them,
+    property - key of object
+ -->

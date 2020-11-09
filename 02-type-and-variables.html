@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Javascript</title>
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- start javascript -->
+    <script>
+        //-- data type --//
+
+
+
+        // strings - 
+        //is wrapped with '' or "";
+
+        'my second string';
+        "my name is akhil";
+
+        // numbers -- 
+        // in javascript numbers are handled as floats
+
+        10;
+        500;
+        3.14;
+
+        // booleans(truthy / falsy)
+        true;
+        false;
+
+        // specials
+        undefined;
+        null;
+        NaN;
+
+        //objects
+
+        const user = {
+            'key': 'value',
+            'name': 'akhil',
+            'username': 'akhileshkrdr',
+        };
+
+        //array
+
+        const users = ['akhil', 'abhi', 'rama', 'raw'];
+
+        const lucyNumbers = [1, 2, 45, 56, 47];
+
+        const whatever = ['akhil', 49, 'wer', 'next', 5600];
+
+        // array of objects
+
+        const superUsers = [{
+            name: 'akhilesh',
+        }, {
+            name: 'rama'
+        }, {
+            name: 'raw'
+        }];
+        // console.log(user);
+        // console.log(users[2]);
+        // console.log(superUsers[0].name);
+
+
+        //declaring variables
+
+        var thing = 'first string';
+        const otherThing = 'second string';
+        // we can not assign a const but if a const is object we can assign its property for example
+
+        const exampleProperty = {
+            name: 'akhil'
+        };
+        console.log(exampleProperty.name = 'rdr');
+        // this will work
+
+        let newThing = 'third string';
+        // we can reassign the 'let'
+
+        //===========
+
+        let myVariable;
+
+        myVariable = 'something';
+    </script>
+
+</body>
+
+</html>
+
+<!-- whats in this file -->
+<!-- 
+    as name of the file in this we have are getting familiar with the primitive data types of javascript
+    language with example.
+    go through the file from top to bottom and you'll endup with the knowledge of the primitive data types
+    and few ways to define variables in js.
+ -->

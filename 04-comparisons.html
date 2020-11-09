@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Comparison</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Practicing!</h1>
+    </div>
+    <script>
+        // javascript
+        const original = 'akhil';
+        const clone = 'AKHIL';
+        console.groupCollapsed('String');
+        console.log(original == clone); //false //javascript is case sensitive while comparing varialbes
+        console.log(original == clone.toLowerCase()); //true
+        console.log(original != clone); //true
+        console.groupEnd();
+
+        const num1 = 10;
+        const num2 = '10';
+        console.groupCollapsed('Numbers');
+        console.log(num1 == num2); //true //due to coercion
+        console.log(num1 === num2); //false //compare type and value both with triple equal sign
+        console.log(num1 != num2); //false
+        console.log(num1 !== num2); //true
+        console.log(num1 == Number(num2)); //true //explicit coercing
+        console.log(num1 === Number(num2)); //true
+        console.groupEnd();
+
+        let what; //undefined i.e declared but not defined
+        let thing = null;
+        let blankString = '';
+        console.groupCollapsed('Booleans');
+        console.log(Boolean(what)); //false
+        console.log(Boolean(thing)); //false thing is null assigned
+        console.log(Boolean(num1)); //true
+        console.log(Boolean(num2)); //true
+        console.log(Boolean({})); //true empty object also return true bcoz its not null
+        console.log(Boolean([])); //true 
+        console.log(Boolean(blankString)); //false 
+        console.groupEnd();
+
+        // The only falsy values in JS are 0, false, null, undefined, empty string, and NaN
+
+        const firstArr = [1, 2, 3];
+        const secondArr = [1, 2, 3];
+
+        const firstObj = {
+            color: 'red'
+        };
+        const secondObj = {
+            color: 'red'
+        };
+        console.groupCollapsed('Objects and Arrays');
+        console.log(firstArr == secondArr); //false
+        console.log(firstObj == secondObj); //false
+        console.log(firstObj.color == secondObj.color); //true
+        console.log(firstArr[0] == secondArr[0]); //true
+        console.groupEnd();
+
+        // Note* -- objects with same key and same values are not equal -
+        // -same is for arrays. but we can compare key and values explicitly 
+        // in both array and objects
+
+        console.groupCollapsed('And Or');
+        console.log(Boolean('blah') && Boolean('thing')); //true
+        console.log(Boolean('blah') && Boolean('')); //false
+        console.log(Boolean('blah') || Boolean('')); //true
+        console.log(Boolean('') || Boolean('')); //false
+        console.groupEnd();
+    </script>
+
+</body>
+
+</html>
+
+<!-- what's in this file ? -->
+
+<!-- 
+    you'll learn about comparisons operator and difference between '==', and '==='.
+    also see about '&&' , '||' operators in javascript.
+ -->

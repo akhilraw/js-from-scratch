@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript functions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <button type="button" class="btn btn-danger" onclick="saySomething('this is the first button')">
+            My button
+        </button>
+        <button type="button" class="btn btn-danger" onclick="saySomething('this is the second button')">
+            My 2nd button
+        </button>
+    </div>
+    <!-- start javascript -->
+    <script>
+        //
+        function saySomething(message = 'goodbye',
+            whisper = false) {
+            if (whisper) {
+                console.log(`%c${message}`, 'font-size:5px');
+            } else {
+                console.log(message);
+            }
+        }
+
+        // saySomething('i have a crush on you', true);
+
+        // saySomething('hello akhilesh');
+
+        // saySomething();
+
+        // function squared(num) {
+        //     return num * num;
+        // }
+
+        // const squaredVal = squared(5);
+
+        // console.log(squaredVal);
+
+        const squared = function(num) {
+            return num * num;
+        }
+
+        // in es6 this above anonymous function can be called
+        // as and anonymous function is a function without name.
+
+        const squaredEs6 = (num) => {
+            return num * num;
+        }
+
+        const otherSquared = squared;
+
+        kick()
+
+        function kick() {
+            console.log('bruce lee\'s kick');
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
+
+<!-- hoisting -->
+<!-- 
+    hoisting means - javascript puts the anonymous function above every js code 
+    and thats why we can call it even before the declaration of the function.
+ -->
+
+<!-- 
+     i) function's are values and they can be stored in a variable.
+    ii) function's are hoisted so they can be placed at the top
+    iii) arrow function are way of creating anonymous function i.e check the squaredEs6() function
+  -->
+<!-- 
+      %c to pass styling with backtick ``
+   -->

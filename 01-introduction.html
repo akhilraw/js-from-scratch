@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Javascript</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>This is my site!</h1>
+        <button type="button" class="btn btn-primary" onclick="changeText()">Change text</button>
+    </div>
+
+    <!-- start javascript -->
+    <script>
+        const header = document.querySelector('h1');
+
+        function changeText() {
+            header.innerText = 'My new text!';
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- what we did in this file is -->
+
+<!-- 
+    1) created html file
+    2) add bootstrap css cdn in header
+    3) created a jumbotron class
+    4) created h1 tag with the purpose to change it with onclick using js
+    5) write js code for changing the h1 text with help of querySelector and changeText()
+       function which we created.
+
+ -->

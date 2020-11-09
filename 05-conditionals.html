@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Conditional</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="jumbotron text-center">
+        <h1>Practicing!</h1>
+    </div> -->
+
+    <div class="dogs-list">
+
+    </div>
+
+    <!-- start javascript -->
+
+    <script>
+        // const name = prompt('What is your name ?');
+        const username = 'akhilraw';
+
+        // if
+        // if (name == 'akhil' || name == 'akhilesh') {
+        //     alert('hello ' + name);
+        // } else if (name == 'rdr') {
+        //     console.log('This is RDR');
+        // } else {
+        //     console.log('You don\'t exist for us !!');
+        // }
+
+
+        // for loop
+        const dogList = document.querySelector('.dogs-list');
+        const dogs = [{
+            name: 'tiger',
+            type: 'german shephard'
+        }, {
+            name: 'entertainment',
+            type: 'bull dog'
+        }];
+
+
+        // for (let i = 0; i < dogs.length; i++) {
+        //     const dog = dogs[i];
+        //     const dogData = document.createElement('div');
+        //     dogData.classList.add('jumbotron', 'text-center');
+        //     dogData.innerText = `${dog.name} is a ${dog.type}`;
+        //     dogList.appendChild(dogData);
+        // }
+
+        //while loop
+        // let i = 0;
+        // while (i < dogs.length) {
+        //     const dog = dogs[i];
+        //     const dogData = document.createElement('div');
+        //     dogData.classList.add('jumbotron', 'text-center');
+        //     dogData.innerText = `${dog.name} is a ${dog.type} using while loop.`;
+        //     dogList.appendChild(dogData);
+
+        //     i++;
+        // }
+
+        //do while loop
+
+        // let i = 0;
+        // do {
+        //     const dog = dogs[i];
+        //     const dogData = document.createElement('div');
+        //     dogData.classList.add('jumbotron', 'text-center');
+        //     dogData.innerText = `${dog.name} is a ${dog.type}`;
+        //     dogList.appendChild(dogData);
+
+        //     i++;
+        // } while (i < dogs.length);
+
+        //for ..of iterator
+        for (dog of dogs) {
+            const dogData = document.createElement('div');
+            dogData.classList.add('jumbotron', 'text-center');
+            dogData.innerText = `${dog.name} is a ${dog.type} using for of`;
+            dogList.appendChild(dogData);
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- what's in this file ? -->
+<!-- 
+    all main types of conditional i.e "if else". and most used types of loops in javascript.
+    perks - prompt() use
+          - createElement(), class add, appendChild use.
+ -->

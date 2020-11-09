@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Operators</title>
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // javascript code
+        let a = 10;
+        const
+            b = 3,
+            c = 12;
+
+        let e = 'my name';
+        const d = '5',
+            f = 'is akhil';
+
+        // addition
+        console.groupCollapsed('Addition')
+        console.log(a + b); //13
+        console.log(a + c); //22
+        console.log(a + d); //105
+        console.log(e + ' ' + f); //my name is akhil
+        console.log(e + ' ' + 'is batman'); //my name is batman'
+        console.groupEnd();
+
+        // multiplication
+        console.groupCollapsed('Multiplication');
+        console.log(a * 2); //20
+        console.log(a * b); //30
+        console.log(b * c); //36
+        console.groupEnd();
+
+        // increment
+        console.groupCollapsed('Incrementing');
+        console.log(a + 1); //11
+        console.log(a++); //will give error as we are assigning new value to a constant
+        console.log(e += f);
+        console.groupEnd();
+
+        // division
+        console.groupCollapsed('division');
+        console.log(60 / 5); //12
+        console.log(35 / 3); //11.666666666666666
+        console.log((35 / 3).toFixed(2)); //11.67
+        console.groupEnd();
+
+        //modulo operator
+        console.groupCollapsed('modulo');
+        console.log(5 % 2); //1
+        console.log(4 % 2); //0
+        console.groupEnd();
+
+        //subtraction
+        console.groupCollapsed('subtraction');
+        console.log(56 - 89); //-33
+        console.log(89 - 56); //33
+        console.groupEnd();
+
+        //decrement
+        let numb = 5;
+        let numb2 = 7;
+        console.groupCollapsed('decrement');
+        console.log(numb--); //5
+        console.log(--numb2); //6
+        console.groupEnd();
+
+        // notice the behaviour of operator's presence before and after the variable
+    </script>
+
+</body>
+
+</html>
+
+<!-- what's in this file ? -->
+<!-- 
+    all the numeric operators in javascript and their behaviour.
+ -->
